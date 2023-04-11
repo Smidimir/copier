@@ -356,7 +356,7 @@ class Worker:
                 quiet=self.quiet,
                 file_=sys.stderr,
             )
-            return False
+            return is_dir
         return self._solve_render_conflict(dst_relpath)
 
     @cached_property
